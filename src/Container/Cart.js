@@ -99,7 +99,7 @@ class Cart extends Component {
                   <input type="text" name="quantity" className="quantity form-control input-number" defaultValue={product.hotelQty} min={1} max={100} ></input>
                 </div>
               </td>
-              <td id="price">{product.hotelPrice}</td>
+              <td id="price">{product.hotelId.hotelPrice*product.hotelQty}</td>
               
               <td>
                 <button type="button" className="close" data-dismiss="alert" aria-label="Close">
